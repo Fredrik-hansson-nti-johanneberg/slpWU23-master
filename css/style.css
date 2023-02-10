@@ -1,0 +1,46 @@
+body{
+    margin: 0px;
+}
+
+.a{
+    left: 0vw;
+    transition: 1s;
+}
+
+button{
+    font-size: 4rem;
+    font-family: 'Material Icons';
+    border: none;
+}
+
+header{
+    padding: 20px;
+    background-color: green;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+nav{
+    top: 0px;
+    left: -90vw;
+    position: fixed;
+    background-color: pink;
+    width: 80vw;
+    height: 100vh;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+
+@media screen and (max-width: 600px) {
+
+    body{
+        background-color: gray;
+    }
+
+}
+
+
+
