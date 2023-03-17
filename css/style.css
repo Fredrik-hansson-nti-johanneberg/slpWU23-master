@@ -49,7 +49,7 @@ header{
 
 
 nav{
-    width: 100vw;
+    width: 100%vw;
     background-color: pink;
     height: auto;
     display: flex;
@@ -58,6 +58,7 @@ nav{
 
 main{
     grid-area: main;
+    margin: 20px;
 }
 
 
@@ -105,14 +106,18 @@ button:hover{
 
 #forsta{
     background-color: green;  
+    grid-area: fo;
 }
 
 #senare{
     background-color: green;
+    grid-area: se;
 }
+
 
 #moderna{
     background-color: beige;
+    grid-area: mo;
 }
 
 .greppsystem_div{
@@ -123,7 +128,33 @@ button:hover{
 }
 
 
+.naturtonserien{
+    width: 90vw;
 
+}
+
+.trombon{
+    width: 10vw;
+}
+
+
+.main_historia{
+    display: grid;
+
+    grid-template-areas: 
+        " h2_hi h2_hi h2_hi"
+        "fo se mo"
+        
+    ;
+
+}
+
+.h2_historia{
+    grid-area: h2_hi;
+    display: flex;
+    justify-content: center;
+
+}
 
 
 @media screen and (max-width: 600px) {
@@ -180,5 +211,18 @@ button:hover{
     }
     .nav_h2{
         display: block;
+    }
+
+
+    .main_historia{
+    
+        grid-template-areas: 
+            " h2_hi"
+            "fo "
+            "se "
+            "mo"
+            
+        ;
+    
     }
 }
