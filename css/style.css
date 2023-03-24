@@ -49,11 +49,10 @@ header{
 
 
 nav{
-    width: 100vw;
-    background-color: pink;
-    height: auto;
     display: flex;
     grid-area: nav;
+    height: 60px;
+    /* background-color: black; */
 }
 
 main{
@@ -70,16 +69,18 @@ main{
 
 .main_hur{
     display: grid;
-
+    grid-template-columns: 100%;
     grid-template-areas: 
     "h2"
+    "natur"
     "grepp"
-    ""
-    ""
     "ft"
     ;
 }
 
+img{
+    width: 50px;
+}
 
 
 footer{
@@ -89,8 +90,6 @@ footer{
 }
 
 .nav_a{
-    border-style: solid;
-    border-color: black;
     background-color: white;
     color: black;
     text-decoration: none;
@@ -102,6 +101,11 @@ footer{
     padding: 10px;
     font-size: 2rem;
 
+}
+
+.nav_a:hover{
+    background-color: rgb(201, 201, 201);
+    transition: 2s;
 }
 
 .meny_knapp{
@@ -118,6 +122,86 @@ footer{
 button:hover{
     cursor: pointer;
 } 
+
+.greppsystem_div{
+    background-color: blueviolet;
+    border-radius: 0px 30px 0px 30px;
+    padding: 20px;
+    margin: 30px;
+    
+}
+
+
+.naturtonserien{
+    width: 30px;
+    border-radius: 0px 30px 0px 30px;
+    grid-area: natur;
+
+}
+
+.trumpet{
+    width: 30px;
+}
+
+.trombon{
+    width: 10vw;
+    border-radius: 0px 30px 0px 30px;
+}
+
+.hur_fungerar{
+    width: 65%;
+    border-radius: 0px 30px 0px 30px;
+    background-color: gold;
+    padding: 15px;
+    margin: 20px;
+}
+
+
+#greppsystem{
+    width: auto;
+    grid-area: grepp;
+    display: grid;
+
+    grid-template-areas: 
+    "grepp grepp grepp"
+    "gaffel svenska drag"
+    ;
+    
+}
+
+.h3_grepp{
+    grid-area: grepp;
+}
+
+#gaffelgrepp{
+    grid-area: gaffel;
+}
+
+#svenskagrepp{
+    grid-area: svenska;
+}
+
+#dragbygel{
+    grid-area: drag;
+}
+
+.main_historia{
+    display: grid;
+
+    grid-template-areas: 
+        " h2_hi h2_hi h2_hi"
+        "fo se mo"
+        
+    ;
+
+}
+
+.h2_historia{
+    grid-area: h2_hi;
+    display: flex;
+    justify-content: center;
+
+}
 
 
 .historia_article{
@@ -140,57 +224,6 @@ button:hover{
 #moderna{
     background-color: beige;
     grid-area: mo;
-}
-
-.greppsystem_div{
-    background-color: blueviolet;
-    border-radius: 0px 30px 0px 30px;
-    padding: 20px;
-    margin: 30px;
-}
-
-
-.naturtonserien{
-    width: auto;
-    border-radius: 0px 30px 0px 30px;
-
-}
-
-.trombon{
-    width: 10vw;
-    border-radius: 0px 30px 0px 30px;
-}
-
-.hur_fungerar{
-    border-radius: 0px 30px 0px 30px;
-    background-color: gold;
-    padding: 15px;
-    margin: 20px;
-}
-
-
-#greppsystem{
-    display: flex;
-    flex-direction: row;
-    grid-area: grepp;
-}
-
-.main_historia{
-    display: grid;
-
-    grid-template-areas: 
-        " h2_hi h2_hi h2_hi"
-        "fo se mo"
-        
-    ;
-
-}
-
-.h2_historia{
-    grid-area: h2_hi;
-    display: flex;
-    justify-content: center;
-
 }
 
 
@@ -220,6 +253,7 @@ button:hover{
         right: 0px;
         position: fixed;
         background-color: pink;
+        height: 75vh;
         width: 100%;
         transition: 1s;
         display: flex;
@@ -265,8 +299,12 @@ button:hover{
 
     
 #greppsystem{
-    display: flex;
-    flex-direction: column;
+    grid-template-areas: 
+    "grepp"
+    "gaffel" 
+    "svenska" 
+    "drag"
+    ;
 }
 
     
