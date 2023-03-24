@@ -49,7 +49,7 @@ header{
 
 
 nav{
-    width: 100%vw;
+    width: 100vw;
     background-color: pink;
     height: auto;
     display: flex;
@@ -57,13 +57,35 @@ nav{
 }
 
 main{
+    
     grid-area: main;
     margin: 20px;
+    padding: 40px;
+    
 }
+
+.hur_h2{
+    grid-area: h2;
+}
+
+.main_hur{
+    display: grid;
+
+    grid-template-areas: 
+    "h2"
+    "grepp"
+    ""
+    ""
+    "ft"
+    ;
+}
+
 
 
 footer{
     grid-area: ft;
+    height: 20px;
+    background-color: black;
 }
 
 .nav_a{
@@ -129,14 +151,29 @@ button:hover{
 
 
 .naturtonserien{
-    width: 90vw;
+    width: auto;
+    border-radius: 0px 30px 0px 30px;
 
 }
 
 .trombon{
     width: 10vw;
+    border-radius: 0px 30px 0px 30px;
 }
 
+.hur_fungerar{
+    border-radius: 0px 30px 0px 30px;
+    background-color: gold;
+    padding: 15px;
+    margin: 20px;
+}
+
+
+#greppsystem{
+    display: flex;
+    flex-direction: row;
+    grid-area: grepp;
+}
 
 .main_historia{
     display: grid;
@@ -180,10 +217,10 @@ button:hover{
 
     nav{
         top: -190vh;
-        left: 0px;
+        right: 0px;
         position: fixed;
         background-color: pink;
-        width: 100vw;
+        width: 100%;
         transition: 1s;
         display: flex;
         flex-direction: column;
@@ -206,8 +243,8 @@ button:hover{
         background-color: rgba(0, 0, 0, 0.7);
         position: fixed;
         display: block;
-        width: 100vw;
-        height: 100vh;
+        width: 100%;
+        height: 100%;
     }
     .nav_h2{
         display: block;
@@ -225,4 +262,13 @@ button:hover{
         ;
     
     }
+
+    
+#greppsystem{
+    display: flex;
+    flex-direction: column;
+}
+
+    
+    
 }
