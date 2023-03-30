@@ -30,7 +30,7 @@ p{
 body{
     margin: 0px;
     display: grid;
-
+    grid-template-columns: 100%;
     grid-template-areas: 
     "hd"
     "nav"
@@ -85,7 +85,7 @@ img{
 
 footer{
     grid-area: ft;
-    height: 20px;
+    height: 190px;
     background-color: black;
 }
 
@@ -224,6 +224,44 @@ button:hover{
 #moderna{
     background-color: beige;
     grid-area: mo;
+}
+
+
+#article_basta{
+    display: flex;
+    flex-direction: row;
+    border-radius: 0px 30px 0px 30px;
+    background-color: aqua;
+    width: 90%;
+    padding: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+
+.div_basta{
+    background-color: gray;
+    border-radius: 0px 30px 0px 30px;
+    margin: 30px;
+    padding: 20px;
+}
+
+
+.basta_spelare{
+    border-radius: 0px 30px 0px 30px;
+    width: 10rem;
+    filter: grayscale(50%);
+    filter: blur(0.5px);
+    filter: hue-rotate(-10deg);
+}
+
+.break{
+    width: 100%;
+}
+
+.visa_mindre{
+    font-size: 1.5rem;
+    cursor: pointer;
 }
 
 
