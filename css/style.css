@@ -38,6 +38,7 @@ body{
     "ft"
     ;
 }
+
 header{
     padding: 20px;
     background-color: green;
@@ -46,8 +47,6 @@ header{
     grid-area: hd;
 }
 
-
-
 nav{
     display: flex;
     grid-area: nav;
@@ -55,8 +54,15 @@ nav{
     /* background-color: black; */
 }
 
+div{
+    box-shadow: 4px 4px 10px 5px rgba(0, 0, 0, 0.155)
+}
+
+article{
+    box-shadow: 4px 4px 10px 5px rgba(0, 0, 0, 0.155)
+}
+
 main{
-    
     grid-area: main;
     margin: 20px;
     padding: 40px;
@@ -80,6 +86,7 @@ main{
 
 img{
     width: 50px;
+    box-shadow: 4px 4px 10px 5px rgba(0, 0, 0, 0.155)
 }
 
 
@@ -149,11 +156,11 @@ button:hover{
 }
 
 .hur_fungerar{
-    width: 65%;
+
     border-radius: 0px 30px 0px 30px;
     background-color: gold;
-    padding: 15px;
-    margin: 20px;
+    padding: 50px;
+    margin: 60px;
 }
 
 
@@ -229,10 +236,11 @@ button:hover{
 
 #article_basta{
     display: flex;
+    margin: 10px;
     flex-direction: row;
     border-radius: 0px 30px 0px 30px;
     background-color: aqua;
-    width: 90%;
+    width: fit-content;
     padding: 30px;
     flex-wrap: wrap;
     justify-content: center;
@@ -246,10 +254,21 @@ button:hover{
     padding: 20px;
 }
 
+.inte_visa{
+    background-color: gray;
+    border-radius: 0px 30px 0px 30px;
+    margin: 30px;
+    padding: 20px;
+    display: none;
+}
+.visa_inte{
+    display: block;
+}
+
 
 .basta_spelare{
     border-radius: 0px 30px 0px 30px;
-    width: 10rem;
+    /* width: 10rem; */
     filter: grayscale(50%);
     filter: blur(0.5px);
     filter: hue-rotate(-10deg);
@@ -259,10 +278,12 @@ button:hover{
     width: 100%;
 }
 
-.visa_mindre{
+#visa_mer{
     font-size: 1.5rem;
     cursor: pointer;
 }
+
+
 
 
 @media screen and (max-width: 600px) {
@@ -272,6 +293,7 @@ button:hover{
         font-size: 4rem;
         font-family: 'Material Icons';
         border: none;
+        box-shadow: 4px 4px 10px 5px rgba(0, 0, 0, 0.155)
     }
 
     header{
@@ -335,16 +357,41 @@ button:hover{
     
     }
 
-    
-#greppsystem{
-    grid-template-areas: 
-    "grepp"
-    "gaffel" 
-    "svenska" 
-    "drag"
-    ;
-}
+    main{
 
+        padding: 0px;
+    }
+
+    .hur_fungerar{
+    padding: 15px;
+    margin: 20px;
+    }
+
+    #greppsystem{
+        grid-template-areas: 
+        "grepp"
+        "gaffel" 
+        "svenska" 
+        "drag"
+        ;
+    }
+
+    .div_basta{
+        width: 90%;
+        margin: 20px;
+        padding: 15px;
+    }
+
+    .inte_visa{
+        width: 90%;
+        margin: 20px;
+        padding: 15px;
+    }
+
+    .basta_spelare{
+        width: 100%;
+    }
+    
     
     
 }

@@ -1,19 +1,23 @@
 
-let myButton = document.querySelector(".meny_knapp")
+let myButton = document.querySelector(".meny_knapp");
 
-let nav = document.querySelector("nav")
+let nav = document.querySelector("nav");
 
-let lager = document.querySelector(".lager")
-
-lager.addEventListener("click", displayMenu)
-
-myButton.addEventListener("click", displayMenu)
+let lager = document.querySelector(".lager");
 
 
+lager.addEventListener("click", displayMenu);
 
+myButton.addEventListener("click", displayMenu);
 
 
 
+let mer = document.querySelector("#visa_mer");
+
+let inte_visa = document.querySelectorAll(".inte_visa");
+
+
+mer.addEventListener("click", visaMer);
 
 
 function displayMenu(){
@@ -24,25 +28,19 @@ function displayMenu(){
 };
 
 
-let mindre = document.querySelector(".visa_mindre")
 
 
-mindre.addEventListener("click", visaMindre)
+function visaMer(){
 
 
+    inte_visa.forEach(inte_visa => {
+        inte_visa.classList.toggle("visa_inte");
+    });
 
-function visaMindre(){
-
-    if (mindre.innerHTML === "Visa mer"){
-        mindre.innerHTML = "Visa mindre"
-
-
+    if (mer.innerHTML === "Visa mer"){
+        mer.innerHTML = "Visa mindre";
     }else{
-        mindre.innerHTML = "Visa mer"
-
-    }
-
-
-
+        mer.innerHTML = "Visa mer";
+    };
 
 };
