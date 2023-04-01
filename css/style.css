@@ -1,30 +1,54 @@
 
 @font-face {
     font-family: 'playfair_display';
-    src: url('../fonter/PlayfairDisplay-Regular.ttf');
+    src: url(../fonter/PlayfairDisplay-Regular.ttf);
 }
 
 @font-face {
     font-family: 'gotu';
-    src: url('../fonter/Gotu-Regular.ttf');
+    src: url(../fonter/Gotu-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Material Icons';
+    font-style: normal;
+    font-weight: 400;
+    src: url(../fonter/flUhRq6tzZclQEJ-Vdg-IuiaDsNc.woff2) format('woff2');
 }
 
 h1{
     font-family: 'playfair_display';
     font-weight: 900;
+    color: rgb(242, 222, 186);
+    font-size: 3em;
 }
 
 h2{
     font-family: 'playfair_display';
     font-weight: 800;
+    color: rgb(250, 236, 214);
+    font-size: 2em;
 }
 
 h3{
     
     font-family: 'playfair_display';
+    color: rgb(130, 0, 0);
+    font-size: 1.5em;
+}
+h4{
+    font-family: 'playfair_display';
+    color: rgb(130, 0, 0);
+    font-size: 1.25em;
 }
 p{
     font-family: 'gotu';
+    color: rgb(130, 0, 0);
+}
+
+figcaption{
+    font-family: 'gotu';
+    color: rgb(130, 0, 0);
 }
 
 body{
@@ -41,7 +65,7 @@ body{
 
 header{
     padding: 20px;
-    background-color: green;
+    background-color: rgb(130, 0, 0);
     display: flex;
     justify-content: center;
     grid-area: hd;
@@ -51,7 +75,7 @@ nav{
     display: flex;
     grid-area: nav;
     height: 60px;
-    /* background-color: black; */
+
 }
 
 div{
@@ -64,8 +88,12 @@ article{
 
 main{
     grid-area: main;
-    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 30px;
     padding: 40px;
+    background-color: rgb(78, 108, 80);
     
 }
 
@@ -73,32 +101,32 @@ main{
     grid-area: h2;
 }
 
+.index_bild{
+    width: 90%;
+}
+
 .main_hur{
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-areas: 
-    "h2"
-    "natur"
-    "grepp"
-    "ft"
-    ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
 }
 
 img{
-    width: 50px;
-    box-shadow: 4px 4px 10px 5px rgba(0, 0, 0, 0.155)
+    box-shadow: 4px 4px 10px 5px rgba(0, 0, 0, 0.155);
+    border-radius: 0px 30px 0px 30px;
 }
 
 
 footer{
     grid-area: ft;
     height: 190px;
-    background-color: black;
+    background-color: rgb(130, 0, 0);
 }
 
 .nav_a{
-    background-color: white;
-    color: black;
+    background-color: rgb(250, 236, 214);
+    color: rgb(130, 0, 0);
     text-decoration: none;
     width: 25%;
     display: flex;
@@ -126,46 +154,39 @@ footer{
 }
 
 
-button:hover{
-    cursor: pointer;
-} 
-
 .greppsystem_div{
-    background-color: blueviolet;
+    background-color: rgb(242, 222, 186);
+    width: fit-content;
     border-radius: 0px 30px 0px 30px;
     padding: 20px;
     margin: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     
 }
 
 
 .naturtonserien{
-    width: 30px;
+    width: auto;
     border-radius: 0px 30px 0px 30px;
-    grid-area: natur;
 
 }
 
-.trumpet{
-    width: 30px;
-}
-
-.trombon{
-    width: 10vw;
-    border-radius: 0px 30px 0px 30px;
+.instrument_hurfungerar{
+    width: 90%;
 }
 
 .hur_fungerar{
-
     border-radius: 0px 30px 0px 30px;
-    background-color: gold;
+    background-color: rgb(250, 236, 214);
     padding: 50px;
-    margin: 60px;
+    margin: 30px;
+    width: 90%;
 }
 
 
 #greppsystem{
-    width: auto;
     grid-area: grepp;
     display: grid;
 
@@ -194,6 +215,8 @@ button:hover{
 
 .main_historia{
     display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
 
     grid-template-areas: 
         " h2_hi h2_hi h2_hi"
@@ -210,36 +233,45 @@ button:hover{
 
 }
 
+.historia_bild{
+    width: 70%;
+}
+
 
 .historia_article{
-    margin: 35px;
+    
+    margin: 30px;
     padding: 20px;
     border-radius: 0px 30px 0px 30px;
+    background-color: rgb(250, 236, 214);
+    height: 90%;
+    gap: 10px;
+
+   display: flex;
+   flex-direction: column;
+   align-items: center;
 }
 
 #forsta{
-    background-color: green;  
     grid-area: fo;
 }
 
 #senare{
-    background-color: green;
     grid-area: se;
 }
 
 
 #moderna{
-    background-color: beige;
     grid-area: mo;
 }
 
 
 #article_basta{
     display: flex;
-    margin: 10px;
+    margin: 30px;
     flex-direction: row;
     border-radius: 0px 30px 0px 30px;
-    background-color: aqua;
+    background-color: rgb(250, 236, 214);
     width: fit-content;
     padding: 30px;
     flex-wrap: wrap;
@@ -248,27 +280,25 @@ button:hover{
 }
 
 .div_basta{
-    background-color: gray;
+    background-color: rgb(242, 222, 186);
     border-radius: 0px 30px 0px 30px;
     margin: 30px;
     padding: 20px;
+    width: 250px;
 }
 
-.inte_visa{
-    background-color: gray;
-    border-radius: 0px 30px 0px 30px;
-    margin: 30px;
-    padding: 20px;
+.visa_inte{
     display: none;
 }
-.visa_inte{
+
+.visa{
     display: block;
 }
 
 
+
 .basta_spelare{
-    border-radius: 0px 30px 0px 30px;
-    /* width: 10rem; */
+    width: 200px;
     filter: grayscale(50%);
     filter: blur(0.5px);
     filter: hue-rotate(-10deg);
@@ -288,9 +318,19 @@ button:hover{
 
 @media screen and (max-width: 600px) {
 
+    p{
+        font-size: 0.8em;
+    }
+
+    figcaption{
+        font-size: 0.8em;
+    }
+
     .meny_knapp{
         display: block;
         font-size: 4rem;
+        height: 2em;
+        width: 2em;
         font-family: 'Material Icons';
         border: none;
         box-shadow: 4px 4px 10px 5px rgba(0, 0, 0, 0.155)
@@ -359,7 +399,8 @@ button:hover{
 
     main{
 
-        padding: 0px;
+        padding: 20px;
+        
     }
 
     .hur_fungerar{
@@ -382,16 +423,21 @@ button:hover{
         padding: 15px;
     }
 
-    .inte_visa{
-        width: 90%;
-        margin: 20px;
-        padding: 15px;
-    }
-
     .basta_spelare{
         width: 100%;
     }
+
+    .naturtonserien{
+    width: 90%;
+    }
+      
+    .greppsystem_div{
+    padding: 10px;
+    margin: 10px;
     
-    
+}
+.instrument_hurfungerar{
+    width: 100%;
+}
     
 }

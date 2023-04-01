@@ -12,14 +12,6 @@ myButton.addEventListener("click", displayMenu);
 
 
 
-let mer = document.querySelector("#visa_mer");
-
-let inte_visa = document.querySelectorAll(".inte_visa");
-
-
-mer.addEventListener("click", visaMer);
-
-
 function displayMenu(){
 
     nav.classList.toggle("nav_transition");
@@ -28,13 +20,20 @@ function displayMenu(){
 };
 
 
+let mer = document.querySelector("#visa_mer");
+
+let visa_inte = document.querySelectorAll(".visa_inte");
+
+
+mer.addEventListener("click", visaMer);
+
 
 
 function visaMer(){
 
 
-    inte_visa.forEach(inte_visa => {
-        inte_visa.classList.toggle("visa_inte");
+    visa_inte.forEach(visa_inte => {
+        visa_inte.classList.toggle("visa");
     });
 
     if (mer.innerHTML === "Visa mer"){
