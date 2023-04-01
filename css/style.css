@@ -86,6 +86,10 @@ article{
     box-shadow: 4px 4px 10px 5px rgba(0, 0, 0, 0.155)
 }
 
+.fanfar{
+    display: none;
+}
+
 main{
     grid-area: main;
     display: flex;
@@ -145,6 +149,13 @@ footer{
 
 .meny_knapp{
     display: none;
+    font-size: 4rem;
+    height: 2em;
+    width: 2em;
+    font-family: 'Material Icons';
+    border: none;
+    box-shadow: 4px 4px 10px 5px rgba(0, 0, 0, 0.155);
+    background-color: rgb(242, 222, 186);
 }
 
 
@@ -316,7 +327,13 @@ footer{
 
 
 
+
+
 @media screen and (max-width: 600px) {
+
+    h2{
+        font-size: 1.75em;
+    }
 
     p{
         font-size: 0.8em;
@@ -328,12 +345,7 @@ footer{
 
     .meny_knapp{
         display: block;
-        font-size: 4rem;
-        height: 2em;
-        width: 2em;
-        font-family: 'Material Icons';
-        border: none;
-        box-shadow: 4px 4px 10px 5px rgba(0, 0, 0, 0.155)
+
     }
 
     header{
@@ -367,6 +379,7 @@ footer{
         top: 0vw;
         transition: 1s;
     }
+
     .lager{
         z-index: -1;
         display: none;
@@ -380,20 +393,16 @@ footer{
         width: 100%;
         height: 100%;
     }
+
     .nav_h2{
         display: block;
     }
 
 
     .main_historia{
-    
-        grid-template-areas: 
-            " h2_hi"
-            "fo "
-            "se "
-            "mo"
-            
-        ;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
     
     }
 
@@ -404,8 +413,8 @@ footer{
     }
 
     .hur_fungerar{
-    padding: 15px;
-    margin: 20px;
+        padding: 15px;
+        margin: 20px;
     }
 
     #greppsystem{
@@ -428,16 +437,17 @@ footer{
     }
 
     .naturtonserien{
-    width: 90%;
+        width: 90%;
     }
       
     .greppsystem_div{
-    padding: 10px;
-    margin: 10px;
+        padding: 10px;
+        margin: 10px;
     
-}
-.instrument_hurfungerar{
-    width: 100%;
-}
+    }
+    .instrument_hurfungerar{
+        width: 100%;
+    }
+
     
 }
