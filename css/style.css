@@ -75,7 +75,6 @@ nav{
     display: flex;
     grid-area: nav;
     height: 60px;
-
 }
 
 div{
@@ -125,7 +124,6 @@ main{
     display: flex;
     flex-direction: column;
     align-items: center;
-
 }
 
 img{
@@ -185,13 +183,11 @@ footer{
     display: flex;
     flex-direction: column;
     align-items: center;
-    
 }
 
 
 .naturtonserien{
     width: auto;
-
 }
 
 .instrument_hurfungerar{
@@ -199,7 +195,6 @@ footer{
 }
 
 .hur_fungerar{
-   
     background-color: rgb(250, 236, 214);
     padding: 50px;
     margin: 30px;
@@ -210,12 +205,10 @@ footer{
 #greppsystem{
     grid-area: grepp;
     display: grid;
-
     grid-template-areas: 
     "grepp grepp grepp"
     "gaffel svenska drag"
     ;
-    
 }
 
 .h3_grepp{
@@ -241,8 +234,7 @@ footer{
 
     grid-template-areas: 
         " h2_hi h2_hi h2_hi"
-        "fo se mo"
-        
+        "fo se mo" 
     ;
 
 }
@@ -251,7 +243,6 @@ footer{
     grid-area: h2_hi;
     display: flex;
     justify-content: center;
-
 }
 
 .historia_bild{
@@ -266,10 +257,9 @@ footer{
     background-color: rgb(250, 236, 214);
     height: 90%;
     gap: 10px;
-
-   display: flex;
-   flex-direction: column;
-   align-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 #forsta{
@@ -290,7 +280,6 @@ footer{
     display: flex;
     margin: 30px;
     flex-direction: row;
-
     background-color: rgb(250, 236, 214);
     width: fit-content;
     padding: 30px;
@@ -301,7 +290,6 @@ footer{
 
 .div_basta{
     background-color: rgb(242, 222, 186);
-
     margin: 30px;
     padding: 20px;
     width: 250px;
@@ -326,6 +314,7 @@ footer{
 
 .break{
     width: 100%;
+    box-shadow: none;
 }
 
 #visa_mer{
@@ -416,9 +405,7 @@ footer{
     }
 
     main{
-
         padding: 20px;
-        
     }
 
     .hur_fungerar{
@@ -461,6 +448,5 @@ footer{
     .instrument_hurfungerar{
         width: 100%;
     }
-
     
 }
